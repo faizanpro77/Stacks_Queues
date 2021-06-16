@@ -42,4 +42,20 @@ import org.junit.Test;
             int result = stack.size();
             Assert.assertEquals(result, 0 );
         }
+
+        @Test
+        public void queueIsCreated_shouldReturnFirstNodeData() {
+            Queue<Integer> queue = new Queue<>();
+            MyNode<Integer> Node1 = new MyNode<>(56);
+            MyNode<Integer> Node2 = new MyNode<>(30);
+            MyNode<Integer> Node3 = new MyNode<>(70);
+
+            queue.enqueue(Node1);
+            queue.enqueue(Node2);
+            queue.enqueue(Node3);
+
+            INode result = queue.peek();
+
+            Assert.assertEquals(result, Node1);
+        }
     }
