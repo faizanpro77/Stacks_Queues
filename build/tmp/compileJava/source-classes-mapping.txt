@@ -1,8 +1,8 @@
 bridgelabz/INode.java
  bridgelabz.INode
-bridgelabz/MyNode.java
- bridgelabz.MyNode
 bridgelabz/MyLinkedList.java
  bridgelabz.MyLinkedList
 bridgelabz/Stack.java
  bridgelabz.Stack
+bridgelabz/MyNode.java
+ bridgelabz.MyNode
