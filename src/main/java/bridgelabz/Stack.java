@@ -15,10 +15,6 @@ public class Stack<T> {
         return myLinkedList.popFirst();
     }
 
-    public void printNode() {
-        myLinkedList.printNodes();
-    }
-
     public int size() {
        return myLinkedList.size();
     }

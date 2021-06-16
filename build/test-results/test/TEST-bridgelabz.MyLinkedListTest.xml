@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-16T09:51:08" hostname="DESKTOP-I19OHT9" time="0.007">
+<testsuite name="bridgelabz.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-16T11:20:58" hostname="DESKTOP-I19OHT9" time="0.017">
   <properties/>
-  <testcase name="queueIsCreated_shouldReturnFirstNodeData" classname="bridgelabz.MyLinkedListTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="queueNodeDequeued_shouldReturnDequeueNode" classname="bridgelabz.MyLinkedListTest" time="0.017"/>
+  <system-out><![CDATA[70
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -58,4 +58,23 @@ import org.junit.Test;
 
             Assert.assertEquals(result, Node1);
         }
+
+        @Test
+        public void queueNodeDequeued_shouldReturnDequeueNode() {
+            Queue<Integer> queue = new Queue<>();
+            MyNode<Integer> Node1 = new MyNode<>(56);
+            MyNode<Integer> Node2 = new MyNode<>(30);
+            MyNode<Integer> Node3 = new MyNode<>(70);
+
+
+            queue.enqueue(Node1);
+            queue.enqueue(Node2);
+            queue.enqueue(Node3);
+
+            queue.dequeue();
+            INode result = queue.dequeue();
+            queue.printNode();
+
+            Assert.assertEquals(result, Node2);
+        }
     }

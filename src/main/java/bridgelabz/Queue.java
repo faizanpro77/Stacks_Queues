@@ -7,7 +7,15 @@ public class Queue<T> {
         myLinkedList.append(newNode);
     }
 
-    public INode peek() {
+    public INode<Integer> peek() {
       return myLinkedList.head;
+    }
+
+    public INode<Integer> dequeue() {
+        return myLinkedList.popFirst();
+    }
+
+    public void printNode() {
+        myLinkedList.printNodes();
     }
 }
