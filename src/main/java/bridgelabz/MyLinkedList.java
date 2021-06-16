@@ -66,14 +66,14 @@ public class MyLinkedList<T> {
         return null;
     }
 
-    public void size() {
+    public int size() {
         int count = 0;
         INode<T> tempNode = head;
         while(tempNode != null) {
             count++;
             tempNode = tempNode.getNext();
         }
-        System.out.println("size of link list : " + count);
+        return count;
     }
 
     public void sortedLinkedList(INode<Integer> newNode) {
@@ -95,5 +95,15 @@ public class MyLinkedList<T> {
             this.tail = tempNode;
             tempNode = tempNode.getNext();
         }
+    }
+
+    public void printNodes() {
+        INode<T> tempNode = head;
+        while(tempNode.getNext() != null) {
+            System.out.print(tempNode.getData() + "->");
+            tempNode = tempNode.getNext();
+        }
+        System.out.print(tempNode.getData());
+        System.out.println();
     }
 }

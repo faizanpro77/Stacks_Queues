@@ -10,4 +10,16 @@ public class Stack<T> {
     public INode peek() {
         return myLinkedList.head;
     }
+
+    public INode pop() {
+        return myLinkedList.popFirst();
+    }
+
+    public void printNode() {
+        myLinkedList.printNodes();
+    }
+
+    public int size() {
+       return myLinkedList.size();
+    }
 }
